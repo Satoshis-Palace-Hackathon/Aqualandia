@@ -272,98 +272,210 @@ RealityEntitiesStatic = {
     Position = { 12.25, 12 },
     Type = 'Avatar',
     Metadata = {
-      DisplayName = ' 1',
-      -- Fish circling
+      DisplayName = '',
+      -- Fish 1 SHALLOW
       SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
     },
   },
-
+  ['wa3tPM8CO3Z1-gLSZ0eENx9TFFF0wGQE0SMb8Fa_Ie0'] = {
+    Position = { 12, 11.75 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 1 SHALLOW
+      SpriteTxId = 'lnP_0Bz-XAj-yUbNtUzM5whZ6DF7geESDIyNHuRLZv0',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  ------------
   ['pond2'] = {
     Position = { 20.25, 21.5 },
     Type = 'Avatar',
     Metadata = {
-      DisplayName = ' 2',
-      -- Fish circling
+      DisplayName = '',
+      -- Fish 2 SHALLOW
       SpriteTxId = 'i3J4FVGS03TdPwj7Hqf_o0yrCvrIh-oRwY0HiqWu7DA',
     },
   },
-
+  ['ef7p8FkwZ0le6_kUnekxQUtVOXYyEjHMC1sTK0ZnNvs'] = {
+    Position = { 20, 21.25 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 2 SHALLOW
+      SpriteTxId = 'lnP_0Bz-XAj-yUbNtUzM5whZ6DF7geESDIyNHuRLZv0',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  -------------
   ['pond3'] = {
     Position = { 6.5,  44.5},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = ' 3',
-      -- Fish circling
-      SpriteTxId = 'i3J4FVGS03TdPwj7Hqf_o0yrCvrIh-oRwY0HiqWu7DA',
+      DisplayName = '',
+      -- Fish 3 JUNK
+      SpriteTxId = 'f-D8Kk8y0lgUJXSbcxUfdvE3JodamaH-XqdX_3jUHKY',
     },
   },
+  ['2H4Oz7MNblRNF_8Yry9d6axzHE5czmPSER1FJXA1gBY'] = {
+    Position = { 6.25,  44.25 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 3 JUNK
+      SpriteTxId = 'gTMZ9OfZFrpcLpbcnvx2AF7lMLwjtaHs7ZWWsV6RVXU',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  -----------------------
   ['pond4'] = {
     Position = { 35.25,  31},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = ' 4',
-      -- Fish circling
-      SpriteTxId = 'i3J4FVGS03TdPwj7Hqf_o0yrCvrIh-oRwY0HiqWu7DA',
+      DisplayName = '',
+      -- Fish 4 DEEP
+      SpriteTxId = 'mkpyMB3JDOfCfslpDIDvmp2uARI4rzHm2RQ9z97mGHQ',
     },
   },
+  ['ErfEVVzX492fXFDD7J0pUs3cznGHmTlsugb85fON0hU'] = {
+    Position = { 35,  30.75 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 4 DEEP
+      SpriteTxId = 'lnP_0Bz-XAj-yUbNtUzM5whZ6DF7geESDIyNHuRLZv0',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  ---------------------------
   ['pond5'] = {
     Position = { 38.25,  28.5},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = ' 5',
-      -- Fish circling
-      SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
+      DisplayName = '',
+      -- Fish 5 DEEP
+      SpriteTxId = 'mkpyMB3JDOfCfslpDIDvmp2uARI4rzHm2RQ9z97mGHQ',
     },
   },
+  ['53qjYPNoluKzBFNd3j2oABrNM48jW4xvsfwtLcwcEGo'] = {
+    Position = { 38,  28.25 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 5 DEEP
+      SpriteTxId = 'lnP_0Bz-XAj-yUbNtUzM5whZ6DF7geESDIyNHuRLZv0',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  --------------------------------------
   ['pond6'] = {
     Position = { -0.5, 10},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = '6',
-      -- Fish circling
+      DisplayName = '',
+      -- Fish 6 SHALLOW
       SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
     },
   },
+  ['OELBWwZPZrwe_Pfog_HtXkHZE2E0iQGukLTqfQ0cOy4'] = {
+    Position = { -0.25, 9.75 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 6 SHALLOW
+      SpriteTxId = 'gTMZ9OfZFrpcLpbcnvx2AF7lMLwjtaHs7ZWWsV6RVXU',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  ---------------------------------------
   ['pond7'] = {
     Position = { -0.5, 8},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = '7',
-      -- Fish circling
-      SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
+      DisplayName = '',
+      -- Fish 7 DEEP
+      SpriteTxId = 'mkpyMB3JDOfCfslpDIDvmp2uARI4rzHm2RQ9z97mGHQ',
     },
   },
+  ['GKuCN4MxMqrhQ16Yc2HO-SDN9_FbWF4iGNbFYs-_QJk'] = {
+    Position = { -0.25, 7.75 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 7 DEEP
+      SpriteTxId = 'gTMZ9OfZFrpcLpbcnvx2AF7lMLwjtaHs7ZWWsV6RVXU',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  --------------------------------------
   ['pond8'] = {
     Position = { -0.5, 6},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = '8',
-      -- Fish circling
-      SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
+      DisplayName = '',
+      -- Fish 8 SECRET
+      SpriteTxId = 'nmw_2CVEaLrN6AYBmEWKOl3rLN0ZhndDlw8zCkS0tYs',
     },
   },
+  ['DevQDvzl3ktWHiuJsaWKDHjXp_xfJt_JzUH4Rhw3ms4'] = {
+    Position = { -0.25, 5.75},
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 8 SECRET
+      SpriteTxId = 'gTMZ9OfZFrpcLpbcnvx2AF7lMLwjtaHs7ZWWsV6RVXU',
+      Interaction = {
+        Type = 'Default',
+      },
+    },
+  },
+  -----------------------------
   ['pond9'] = {
     Position = { -0.5, 4},
     Type = 'Avatar',
     Metadata = {
-      DisplayName = '9',
-      -- Fish circling
-      SpriteTxId = 'dwkIwPs0ItgsVHWxm-GEbIjhntI1lY8R1ie6PaS9TxY',
+      DisplayName = '',
+      -- Fish 9 JUNK
+      SpriteTxId = 'f-D8Kk8y0lgUJXSbcxUfdvE3JodamaH-XqdX_3jUHKY',
+    },
+  },
+  ['t1I1ZJt1a3WIi6RHlWItbxMD13rZb8UnYrH5YoiRGcY'] = {
+    Position = { -0.25, 3.75 },
+    Type = 'Avatar',
+    Metadata = {
+      DisplayName = ' ',
+      -- Rod 9 JUNK
+      SpriteTxId = 'gTMZ9OfZFrpcLpbcnvx2AF7lMLwjtaHs7ZWWsV6RVXU',
+      Interaction = {
+        Type = 'Default',
+      },
     },
   },
 
 
-
-  ['Oi8VXInI_3rmpmM7Xr5BAqieNu3Q57FBSA9FB1GIU3U'] = {
-    Position = { 46.5, 47.5 },
+  ['haiiGM7ilBsPBJDwcBGUKRr7Q3Fr5KF3KZVejBDon_E'] = {
+    Position = { 46.25, 47.25 },
     Type = 'Avatar',
     Metadata = {
       DisplayName = ' ',
       -- Llama wif hat
       SpriteTxId = 'lnP_0Bz-XAj-yUbNtUzM5whZ6DF7geESDIyNHuRLZv0',
       Interaction = {
-        Type = 'SchemaForm',
-        Id = 'CastRod'
+        Type = 'Default',
       },
     },
   },
