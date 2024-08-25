@@ -39,6 +39,7 @@ Handlers.add(
             Tags = {
                 Action = "ChatMessage",
                 ['Author-Name'] = Constants.RodName,
+                Recipient = msg.From,
             },
             Data = 'You raise your rod up to cast into the sea...'
         })
@@ -60,6 +61,7 @@ Handlers.add(
     Handlers.utils.hasMatchingTag("Action", "Catch"),
     function(msg)
         print("Catch")
+        local userId = msg.Tags.Sender
         local catch = tonumber(msg.Tags.Catch)
         assert(msg.From == Constants.GameplayProcess, "You have no authority to call this handler")
         local message = '...and your lure fails to get a bite ' .. msg.Tags.Name .. '...'
@@ -80,6 +82,7 @@ Handlers.add(
             Tags = {
                 Action = "ChatMessage",
                 ['Author-Name'] = Constants.RodName,
+                Recipient = userId,
             },
             Data = message
         })
@@ -91,11 +94,13 @@ Handlers.add(
     Handlers.utils.hasMatchingTag("Action", "Castless"),
     function(msg)
         print("Castless")
+        local userId = msg.Tags.Sender
         ao.send({
             Target = Constants.TARGET_WORLD_PID,
             Tags = {
                 Action = "ChatMessage",
                 ['Author-Name'] = Constants.RodName,
+                Recipient = userId,
             },
             Data = '... but you must see the Fisher King to get rod casts...'
         })

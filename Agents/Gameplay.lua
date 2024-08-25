@@ -524,6 +524,7 @@ Handlers.add(
                 Action = "Catch",
                 Catch = tostring(catch),
                 Name = Users[userId].Name,
+                Sender = userId,
             }
         })
     end
@@ -574,6 +575,8 @@ Handlers.add(
                     Tags = {
                         Action = "ChatMessage",
                         ['Author-Name'] = '~The Sea~',
+                        -- This one can be Global :)
+                        -- Recipient = userId,
                     },
                     Data = '... ' .. senderName .. ' ... You feel a calling to fish ...'
                 })
@@ -587,6 +590,7 @@ Handlers.add(
                 Tags = {
                     Action = "ChatMessage",
                     ['Author-Name'] = 'Fish Monger',
+                    Recipient = userId,
                 },
                 Data = ' You drive a hard bargin ' ..
                     Users[userId].Name .. '... but here\'s ' .. tostring(redemptionValue / 1000000000000) .. ' LLAMA.'
