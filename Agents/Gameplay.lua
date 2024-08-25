@@ -594,3 +594,44 @@ Handlers.add(
             return
         end
     end)
+
+-- Token interfaces from: https://github.com/permaweb/aos/blob/main/blueprints/token.lua
+
+--[[
+     Info
+   ]]
+--
+Handlers.add('info', "Info", function(msg)
+    msg.reply({
+        Name = Name,
+        Ticker = Ticker,
+        Logo = Logo,
+        Denomination = tostring(Denomination)
+    })
+end)
+
+--[[
+     Balance
+   ]]
+--
+Handlers.add('balance', "Balance", function(msg)
+    local bal = '0'
+
+    -- If not Recipient is provided, then return the Senders balance
+    if (msg.Tags.Recipient) then
+        if (Balances[msg.Tags.Recipient]) then
+            bal = Balances[msg.Tags.Recipient]
+        end
+    elseif msg.Tags.Target and Balances[msg.Tags.Target] then
+        bal = Balances[msg.Tags.Target]
+    elseif Balances[msg.From] then
+        bal = Balances[msg.From]
+    end
+
+    msg.reply({
+        Balance = bal,
+        Ticker = Ticker,
+        Account = msg.Tags.Recipient or msg.From,
+        Data = bal
+    })
+end)
