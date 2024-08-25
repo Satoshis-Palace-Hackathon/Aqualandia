@@ -602,6 +602,7 @@ Handlers.add(
 Name = "Aqualandia Rod Casts"
 Ticker = "CAST"
 -- Logo = "TODO"
+Denomination = 1
 
 --[[
      Info
