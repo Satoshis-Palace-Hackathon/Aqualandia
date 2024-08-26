@@ -594,3 +594,59 @@ Handlers.add(
             return
         end
     end)
+
+-- Implement Token interfaces for casts
+-- Based on token interfaces from: https://github.com/permaweb/aos/blob/main/blueprints/token.lua
+-- Note: Limited to `Info` and `Balance`, this should be enough for Reality Viewer integration
+
+Name = "Aqualandia Rod Casts"
+Ticker = "CAST"
+-- Logo = "TODO"
+Denomination = 1
+
+--[[
+     Info
+   ]]
+--
+Handlers.add('info', "Info", function(msg)
+    msg.reply({
+        Name = Name,
+        Ticker = Ticker,
+        -- Logo = Logo, -- TODO: Logo
+        Denomination = tostring(Denomination)
+    })
+end)
+
+local function hasCastBalance(userId)
+    return Users[userId] ~= nil
+end
+
+local function getCastBalance(userId)
+    return Users[userId].Balance.Casts
+end
+
+--[[
+     Balance
+   ]]
+--
+Handlers.add('balance', "Balance", function(msg)
+    local bal = '0'
+
+    -- If not Recipient is provided, then return the Senders balance
+    if (msg.Tags.Recipient) then
+        if (hasCastBalance(msg.Tags.Recipient)) then
+            bal = getCastBalance(msg.Tags.Recipient)
+        end
+    elseif msg.Tags.Target and hasCastBalance(msg.Tags.Target) then
+        bal = getCastBalance(msg.Tags.Target)
+    elseif hasCastBalance(msg.From) then
+        bal = getCastBalance(msg.From)
+    end
+
+    msg.reply({
+        Balance = bal,
+        Ticker = Ticker,
+        Account = msg.Tags.Recipient or msg.From,
+        Data = bal
+    })
+end)

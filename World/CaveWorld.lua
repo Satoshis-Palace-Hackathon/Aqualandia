@@ -1,3 +1,5 @@
+GameplayProcess = "sZe_mf4uJs1khzh0QZmNnaxdoXtBa51LRh2uhnDyk3Y"
+
 --#region Model
 
 RealityInfo = {
@@ -7,6 +9,9 @@ RealityInfo = {
 }
 
 RealityParameters = {
+  Token = {
+    Primary = GameplayProcess
+  },
   ['2D-Tile-0'] = {
     Version = 0,
     -- PlayerSpriteTxId = 'njU06ZNozJgm0D_nGSmt7xC6LGA0IG4XjmRfAiGO2mw',
